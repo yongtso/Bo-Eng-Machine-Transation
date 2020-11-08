@@ -1,0 +1,92 @@
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\presu\miniconda3\envs\cs701\lib\logging\__init__.py", line 1084, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\presu\miniconda3\envs\cs701\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2581' in position 378: character maps to <undefined>
+Call stack:
+  File "C:\Users\presu\miniconda3\envs\cs701\lib\runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\presu\miniconda3\envs\cs701\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\presu\miniconda3\envs\cs701\lib\site-packages\ipykernel_launcher.py", line 16, in <module>
+    app.launch_new_instance()
+  File "C:\Users\presu\miniconda3\envs\cs701\lib\site-packages\traitlets\config\application.py", line 845, in launch_instance
+    app.start()
+  File "C:\Users\presu\miniconda3\envs\cs701\lib\site-packages\ipykernel\kernelapp.py", line 612, in start
+    self.io_loop.start()
+  File "C:\Users\presu\miniconda3\envs\cs701\lib\site-packages\tornado\platform\asyncio.py", line 149, in start
+    self.asyncio_loop.run_forever()
+  File "C:\Users\presu\miniconda3\envs\cs701\lib\asyncio\base_events.py", line 570, in run_forever
+    self._run_once()
+  File "C:\Users\presu\miniconda3\envs\cs701\lib\asyncio\base_events.py", line 1859, in _run_once
+    handle._run()
+  File "C:\Users\presu\miniconda3\envs\cs701\lib\asyncio\events.py", line 81, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\presu\miniconda3\envs\cs701\lib\site-packages\tornado\ioloop.py", line 690, in <lambda>
+    lambda f: self._run_callback(functools.partial(callback, future))
+  File "C:\Users\presu\miniconda3\envs\cs701\lib\site-packages\tornado\ioloop.py", line 743, in _run_callback
+    ret = callback()
+  File "C:\Users\presu\miniconda3\envs\cs701\lib\site-packages\tornado\gen.py", line 787, in inner
+    self.run()
+  File "C:\Users\presu\miniconda3\envs\cs701\lib\site-packages\tornado\gen.py", line 748, in run
+    yielded = self.gen.send(value)
+  File "C:\Users\presu\miniconda3\envs\cs701\lib\site-packages\ipykernel\kernelbase.py", line 381, in dispatch_queue
+    yield self.process_one()
+  File "C:\Users\presu\miniconda3\envs\cs701\lib\site-packages\tornado\gen.py", line 225, in wrapper
+    runner = Runner(result, future, yielded)
+  File "C:\Users\presu\miniconda3\envs\cs701\lib\site-packages\tornado\gen.py", line 714, in __init__
+    self.run()
+  File "C:\Users\presu\miniconda3\envs\cs701\lib\site-packages\tornado\gen.py", line 748, in run
+    yielded = self.gen.send(value)
+  File "C:\Users\presu\miniconda3\envs\cs701\lib\site-packages\ipykernel\kernelbase.py", line 365, in process_one
+    yield gen.maybe_future(dispatch(*args))
+  File "C:\Users\presu\miniconda3\envs\cs701\lib\site-packages\tornado\gen.py", line 209, in wrapper
+    yielded = next(result)
+  File "C:\Users\presu\miniconda3\envs\cs701\lib\site-packages\ipykernel\kernelbase.py", line 268, in dispatch_shell
+    yield gen.maybe_future(handler(stream, idents, msg))
+  File "C:\Users\presu\miniconda3\envs\cs701\lib\site-packages\tornado\gen.py", line 209, in wrapper
+    yielded = next(result)
+  File "C:\Users\presu\miniconda3\envs\cs701\lib\site-packages\ipykernel\kernelbase.py", line 543, in execute_request
+    self.do_execute(
+  File "C:\Users\presu\miniconda3\envs\cs701\lib\site-packages\tornado\gen.py", line 209, in wrapper
+    yielded = next(result)
+  File "C:\Users\presu\miniconda3\envs\cs701\lib\site-packages\ipykernel\ipkernel.py", line 306, in do_execute
+    res = shell.run_cell(code, store_history=store_history, silent=silent)
+  File "C:\Users\presu\miniconda3\envs\cs701\lib\site-packages\ipykernel\zmqshell.py", line 536, in run_cell
+    return super(ZMQInteractiveShell, self).run_cell(*args, **kwargs)
+  File "C:\Users\presu\miniconda3\envs\cs701\lib\site-packages\IPython\core\interactiveshell.py", line 2876, in run_cell
+    result = self._run_cell(
+  File "C:\Users\presu\miniconda3\envs\cs701\lib\site-packages\IPython\core\interactiveshell.py", line 2922, in _run_cell
+    return runner(coro)
+  File "C:\Users\presu\miniconda3\envs\cs701\lib\site-packages\IPython\core\async_helpers.py", line 68, in _pseudo_sync_runner
+    coro.send(None)
+  File "C:\Users\presu\miniconda3\envs\cs701\lib\site-packages\IPython\core\interactiveshell.py", line 3145, in run_cell_async
+    has_raised = await self.run_ast_nodes(code_ast.body, cell_name,
+  File "C:\Users\presu\miniconda3\envs\cs701\lib\site-packages\IPython\core\interactiveshell.py", line 3337, in run_ast_nodes
+    if (await self.run_code(code, result,  async_=asy)):
+  File "C:\Users\presu\miniconda3\envs\cs701\lib\site-packages\IPython\core\interactiveshell.py", line 3417, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-18-7e71abd870b0>", line 3, in <module>
+    trainer.fit(model)
+  File "C:\Users\presu\miniconda3\envs\cs701\lib\site-packages\pytorch_lightning\trainer\trainer.py", line 440, in fit
+    results = self.accelerator_backend.train()
+  File "C:\Users\presu\miniconda3\envs\cs701\lib\site-packages\pytorch_lightning\accelerators\gpu_accelerator.py", line 51, in train
+    self.trainer.train_loop.setup_training(model)
+  File "C:\Users\presu\miniconda3\envs\cs701\lib\site-packages\pytorch_lightning\trainer\training_loop.py", line 135, in setup_training
+    self.trainer.logger.log_hyperparams(ref_model.hparams_initial)
+  File "C:\Users\presu\miniconda3\envs\cs701\lib\site-packages\pytorch_lightning\utilities\distributed.py", line 35, in wrapped_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\presu\miniconda3\envs\cs701\lib\site-packages\pytorch_lightning\loggers\wandb.py", line 139, in log_hyperparams
+    self.experiment.config.update(params, allow_val_change=True)
+  File "C:\Users\presu\miniconda3\envs\cs701\lib\site-packages\wandb\sdk\wandb_config.py", line 158, in update
+    self._callback(data=self._as_dict())
+  File "C:\Users\presu\miniconda3\envs\cs701\lib\site-packages\wandb\sdk\wandb_run.py", line 654, in _config_callback
+    logger.info("config_cb %s %s %s", key, val, data)
+Message: 'config_cb %s %s %s'
+Arguments: (None, None, {'_wandb': {'cli_version': '0.10.9', 'python_version': '3.8.5', 'is_jupyter_run': True, 'is_kaggle_kernel': False, 'huggingface_version': '3.4.0', 'framework': 'torch'}, 'chTokenizer': 'Tokenizer(vocabulary_size=7466, model=SentencePieceBPE, unk_token=<unk>, replacement=▁, add_prefix_space=True, dropout=None)', 'enTokenizer': 'Tokenizer(vocabulary_size=6404, model=SentencePieceBPE, unk_token=<unk>, replacement=▁, add_prefix_space=True, dropout=None)', 'pretrainedModelName': 't5-small', 'weight_decay': 0.0, 'learning_rate': 0.0003, 'max_input_len': 100, 'max_output_len': 100, 'train_batch_size': 8, 'eval_batch_size': 8, 'num_train_epochs': 2, 'n_gpu': 1, 'freeze_encoder': False, 'freeze_embed': False, 'adam_epsilon': 1e-08, 'warmup_stpes': 0, 'gradient_accumulation_steps': 8, 'resume_from_checkpoint': 'None', 'val_check_interval': 0.05, 'early_stop_callback': False, 'fp_16': False, 'opt_level': 'O1', 'max_grad_norm': 1.0, 'seed': 42})
+
+  | Name  | Type                       | Params
+-----------------------------------------------------
+0 | model | T5ForConditionalGeneration | 60 M  
