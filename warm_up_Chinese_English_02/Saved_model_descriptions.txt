@@ -1,0 +1,8 @@
+__01_t5simple_2020-06-12-2020--14=17=05.ckpt
+-- Trained on 10000 (ten thousand) UN pairs, but predict the same output all the time.
+-- Training loss oscillates and does not converge. Consider adjusting learning rate or introduce scheduler. 
+-- Report "index out of bound" when size of data >= 20000, mysterious
+
+__01_t5simple_2020-06-12-2020--19=55=07.ckpt
+-- Trained on 100000 (a hundred thousand) UN pairs, but predict irrelevant output all the time 
+-- Training loss oscillates at the level of 6 ~ 8. Consider adjusting learning rate or introduce scheduler. 

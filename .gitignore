@@ -1,1 +1,4 @@
 *.ckpt
+warm_up_Chinese_English_02/en-zh/*
+*.tar.gz
+*.tar.gz.00

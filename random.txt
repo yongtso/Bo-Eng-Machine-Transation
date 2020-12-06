@@ -1,0 +1,4 @@
+What is grouped optimizer
+
+output = zhTokenizer.encode(df_UN['zh'][0])
+print(output.ids, output.tokens, output.offsets, output.attention_mask)
