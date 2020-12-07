@@ -1,4 +1,19 @@
-What is grouped optimizer
+!!! IMPORTANT !!
+-- Figure out how model.generate() works and the meaning of these hyperparameters 
+
+
+Steps of tuning hyperparameters: 
+-- Adjust vocab size by T5Config 
+-- Adjust size of training data 
+-- Choose different variation of T5 models (other than t5-small. Check on what data size was each model trained) 
+-- Introduce other hyperparameters, metrics, etc. (See toycode for outline) 
+
+
+
+Important questions
+-- What's the difference between model.forward() and model.generate()
+-- How to check what are the available kwargs
+-- What is grouped optimizer
 
 output = zhTokenizer.encode(df_UN['zh'][0])
 print(output.ids, output.tokens, output.offsets, output.attention_mask)
